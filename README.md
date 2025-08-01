@@ -23,5 +23,30 @@ The site simply displays a "Hello World" message — all deployed from a cloud s
 
 <img width="419" height="165" alt="live-website" src="https://github.com/user-attachments/assets/7b27bc9d-aaf4-4169-be86-08d6c602ef4d" />
 
-## 📁 Project Structure
+Steps I Followed
+1. Launched EC2 instance on AWS
+2. Configured **Security Group** to allow HTTP (port 80)
+3. Installed Apache using:
+   ```bash
+   sudo yum update -y
+   sudo yum install httpd -y
+4. Enabled Apache:
+   sudo systemctl start httpd
+   sudo systemctl enable httpd
+5. Uploaded the index.html:
+   sudo mv index.html /var/www/html/
+<img width="548" height="475" alt="Apache" src="https://github.com/user-attachments/assets/378f9e6d-9470-4b64-a58e-4d7835e2633e" />
+
+
+
+
+
+
+
+
+
+
+
+
+   
 
